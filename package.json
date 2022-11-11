@@ -23,6 +23,7 @@
     "autoprefixer": "lastest",
     "@tailwindcss/forms": "lastest",
     "@tailwindcss/typography": "lastest",
-    "@tailwindcss/aspect-ratio": "lastest"
+    "@tailwindcss/aspect-ratio": "lastest",
+    "@tailwindcss/line-clamp": "^0.4.2"
   }
 }
