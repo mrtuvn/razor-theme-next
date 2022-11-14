@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Layout from '@/components/layout/Layout'
 import BrandSlider from '@/components/brandSlider/BrandSlider'
+import RecommendedProducts from '@/components/recommendedProducts'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
+        <RecommendedProducts/>
         <BrandSlider/>
       </Layout>
     </div>
