@@ -1,7 +1,9 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+    title: string;
+};
 
-export default function experimental({}: Props) {
-    return <div>experimental</div>;
+export default function Experimental({ title }: Props) {
+    return <div>experimental props with - {title} </div>;
 }
