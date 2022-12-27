@@ -1682,7 +1682,7 @@ prettier-plugin-tailwindcss@^0.2.1:
   resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.2.1.tgz#989b35afd86c550cb671da69891aba4f4a051159"
   integrity sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==
 
-prop-types@^15.8.1:
+prop-types@^15.5.0, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1927,6 +1927,13 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
+
+svg-inline-react@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/svg-inline-react/-/svg-inline-react-3.2.1.tgz#b95b56d9e04b7e72b1e2275367269d3301f647e3"
+  integrity sha512-5/hM6wxca1BG9EyrWy8Q4ZQ6zHLMI805aTFia9ZeIeXu9VT3hdIvROWtBmzRM9at91/7odwylRMJ0B3OiDXUQQ==
+  dependencies:
+    prop-types "^15.5.0"
 
 tailwindcss@>=3.2.4:
   version "3.2.4"

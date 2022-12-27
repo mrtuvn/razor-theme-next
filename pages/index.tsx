@@ -3,7 +3,6 @@ import React, { Suspense, lazy } from "react";
 import Layout from "@/components/layout/Layout";
 import BrandSlider from "@/components/brandSlider/BrandSlider";
 import RecommendedProducts from "@/components/recommendedProducts";
-import lazyload from "@/components/utils/lazyload";
 
 const Exp = lazy(() => wait(12000).then(() => import("@/app/experimental")));
 // const Exp = lazyload(() => {
@@ -33,7 +32,7 @@ function Home() {
                 <RecommendedProducts />
                 <BrandSlider />
                 <Suspense fallback={<h4>Loading...</h4>}>
-                    <Exp title="Title Data Test"></Exp>
+                    <Exp title="Title Data Test..."></Exp>
                 </Suspense>
             </Layout>
         </>

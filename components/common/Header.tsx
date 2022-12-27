@@ -8,9 +8,9 @@ import Nav from "@/components/common/Nav/Nav";
 const Header: NextComponentType = () => {
     return (
         <>
-            <div className="header flex flex-col">
+            <div className="header flex flex-col bg-footer text-white">
                 <div className="top-header"></div>
-                <div className="main-header">
+                <div className="main-header flex items-center justify-between  py-2 md:py-4 ">
                     <Image
                         src="/vercel.svg"
                         width="194"

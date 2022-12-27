@@ -5,16 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
-    fontFamily: {
-      sans: ["Roboto Condensed", "sans-serif"],
-    },
-    container: {
-      screens: {
-        lg: "1230px",
-      },
-    },
     extend: {
+      fontFamily: {
+        sans: ["Roboto Condensed", "sans-serif"],
+      },
       screens: {
         xs: "480px",
         "3xl": "1920px",
@@ -24,13 +20,16 @@ module.exports = {
         25: "0 0 25%",
       },
       colors: {
-        main: "rgba(232,130,21,0.7)",
+        primary: "rgba(255,126,0)",
         second: "#fa8c16",
-        text: "rgba(255,231,186,0.6)",
+        tertiary: "#424",
+        text: "rgba(58,58,58)",
         button: "#ff792c",
+        footer: "rgba(35,47,63)",
       },
       boxShadow: {
         custom: "0px 10px 20px rgba(0,0,0,0.1)",
+        card: "0px 0px 6px rgba(79, 95, 120, 0.1)",
       },
     },
   },
