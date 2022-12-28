@@ -1,7 +1,7 @@
 import React, { useDeferredValue, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-
+import "swiper/css";
 const BrandSlider = () => {
     const apiEndpoint = "https://jsonplaceholder.typicode.com/photos";
     const [brandPhotos, setBrandPhotos] = useState([]);
@@ -38,7 +38,7 @@ const BrandSlider = () => {
                     spaceBetween={50}
                     slidesPerView={7}
                     onSlideChange={() => {}}
-                    onSwiper={(swiper) => {}}
+                    onSwiper={() => {}}
                 >
                     <>
                         {deferedValue.map((brand: Brand) => (
