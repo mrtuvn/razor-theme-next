@@ -5,5 +5,9 @@ type Props = {
 };
 
 export default function Experimental({ title }: Props) {
-    return <div>experimental props with - {title} </div>;
+    return (
+        <div className="container mx-auto">
+            experimental props with - {title}{" "}
+        </div>
+    );
 }

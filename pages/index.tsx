@@ -1,15 +1,9 @@
 import Head from "next/head";
 import React, { Suspense, lazy } from "react";
 import Layout from "@/components/layout/Layout";
-import BrandSlider from "@/components/brandSlider/BrandSlider";
 import RecommendedProducts from "@/components/recommendedProducts";
 
-const Exp = lazy(() => wait(12000).then(() => import("@/app/experimental")));
-// const Exp = lazyload(() => {
-//     import("@/app/experimental").then((module) => {
-//         return { default: module.Experimental };
-//     });
-// });
+const BrandSlider = lazy(() => import("@/components/brandSlider/BrandSlider"));
 
 function wait(time: number) {
     return new Promise((resolve) => {
@@ -30,9 +24,14 @@ function Home() {
             </Head>
             <Layout>
                 <RecommendedProducts />
-                <BrandSlider />
-                <Suspense fallback={<h4>Loading...</h4>}>
-                    <Exp title="Title Data Test..."></Exp>
+                <Suspense
+                    fallback={
+                        <p className="absolute inset-0 mx-auto container">
+                            Loading...
+                        </p>
+                    }
+                >
+                    <BrandSlider />
                 </Suspense>
             </Layout>
         </>

@@ -5,13 +5,13 @@ type Props = {};
 function Nav({}: Props) {
     return (
         <>
-            <div className="flex gap-10">
+            <div className="flex gap-10 py-4">
                 <div className="categories-tree-vertical ">
                     <div>
                         <span className="hambuger-icon"></span>
                         ALL CATEGORIES
                     </div>
-                    <ul>
+                    <ul className="hidden">
                         <li>
                             <a className="capitalize">Audio Music</a>
                         </li>
@@ -49,7 +49,7 @@ function Nav({}: Props) {
                     </ul>
                 </div>
                 <div className="nav-horizontal">
-                    <nav className="headerMenuHorizontal flex w-full">
+                    <nav className="headerMenuHorizontal flex w-full gap-4">
                         <div>
                             <span className="uppercase">DEMOs</span>
                         </div>

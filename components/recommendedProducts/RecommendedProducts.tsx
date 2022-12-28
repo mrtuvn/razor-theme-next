@@ -1,8 +1,9 @@
 export default function RecommendedProducts() {
-
     return (
         <>
-            RecommendedProd<br/>
+            <div className="container mx-auto">
+                <p>RecommendedProd</p>
+            </div>
         </>
-    )
+    );
 }
