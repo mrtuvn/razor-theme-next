@@ -1,8 +1,8 @@
-import type { NextComponentType } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { useState, useId } from "react";
-import Newsletter from "@/components/common/Newsletter";
+import type { NextComponentType } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState, useId } from 'react';
+import Newsletter from '@/components/common/Newsletter';
 
 const yearNow = new Date().getFullYear();
 
@@ -10,19 +10,19 @@ const Footer: NextComponentType = () => {
     const services = [
         {
             id: 1,
-            name: "HTML, CSS, Theme Development",
+            name: 'HTML, CSS, Theme Development',
         },
         {
             id: 2,
-            name: "Javascript",
+            name: 'Javascript',
         },
         {
             id: 3,
-            name: "ReactJS/Nextjs",
+            name: 'ReactJS/Nextjs',
         },
         {
             id: 4,
-            name: "Magento 2 customises",
+            name: 'Magento 2 customises',
         },
     ];
 
@@ -30,8 +30,8 @@ const Footer: NextComponentType = () => {
 
     console.log(checked);
 
-    const handleCheck = (id) => {
-        setChecked((prev) => {
+    const handleCheck = (id: number) => {
+        setChecked((prev): any => {
             console.log(prev);
             const isChecked = checked.includes(id);
 
@@ -52,7 +52,7 @@ const Footer: NextComponentType = () => {
             <footer className="bg-footer text-white">
                 <div className="container mx-auto">
                     <div className="topFooter">
-                        <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 pb-[50px] pt-10 md:pt-16">
+                        <div className="grid grid-cols-2 gap-5 pb-[50px] pt-10 sm:gap-9 md:grid-cols-7 md:pt-16 lg:gap-11 xl:grid-cols-12 xl:gap-7">
                             <div className="col-span-full sm:col-span-1 md:col-span-3 ">
                                 <Image
                                     src="/windcom.svg"
@@ -65,13 +65,13 @@ const Footer: NextComponentType = () => {
                                     {services.map((service) => (
                                         <div
                                             key={service.id}
-                                            className="items-center flex"
+                                            className="flex items-center"
                                         >
                                             <input
                                                 type="checkbox"
                                                 id={service.id}
                                                 checked={checked.includes(
-                                                    service.id
+                                                    service.id,
                                                 )}
                                                 onChange={() =>
                                                     handleCheck(service.id)
@@ -88,7 +88,7 @@ const Footer: NextComponentType = () => {
 
                                     <button
                                         type="submit"
-                                        className="button primary mt-4 bg-primary rounded-lg p-2 justify-end flex items-end mr-auto"
+                                        className="button primary mt-4 mr-auto flex items-end justify-end rounded-lg bg-primary p-2"
                                         onClick={handleSubmit}
                                     >
                                         Register
@@ -96,8 +96,8 @@ const Footer: NextComponentType = () => {
                                 </form>
                             </div>
 
-                            <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2">
-                                <h3 className="font-medium text-base mb-2 sm:mb-4 lg:mb-6">
+                            <div className="col-span-1 pb-3.5 sm:pb-0 md:col-span-2">
+                                <h3 className="mb-2 text-base font-medium sm:mb-4 lg:mb-6">
                                     Information
                                 </h3>
                                 <ul>
@@ -139,8 +139,8 @@ const Footer: NextComponentType = () => {
                                     </Link>
                                 </ul>
                             </div>
-                            <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2">
-                                <h3 className="font-medium text-base mb-2 sm:mb-4 lg:mb-6">
+                            <div className="col-span-1 pb-3.5 sm:pb-0 md:col-span-2">
+                                <h3 className="mb-2 text-base font-medium sm:mb-4 lg:mb-6">
                                     Categories
                                 </h3>
                                 <ul>
@@ -182,8 +182,8 @@ const Footer: NextComponentType = () => {
                                     </Link>
                                 </ul>
                             </div>
-                            <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2">
-                                <h3 className="font-medium text-base mb-2 sm:mb-4 lg:mb-6">
+                            <div className="col-span-1 pb-3.5 sm:pb-0 md:col-span-2">
+                                <h3 className="mb-2 text-base font-medium sm:mb-4 lg:mb-6">
                                     Brands
                                 </h3>
                                 <ul>
@@ -225,8 +225,8 @@ const Footer: NextComponentType = () => {
                                     </Link>
                                 </ul>
                             </div>
-                            <div className="flex flex-col col-span-full sm:col-span-1 md:col-start-4 xl:col-start-auto md:col-span-4 xl:col-span-3  ">
-                                <h3 className="font-medium text-base mb-2 sm:mb-4 lg:mb-6">
+                            <div className="col-span-full flex flex-col sm:col-span-1 md:col-span-4 md:col-start-4 xl:col-span-3 xl:col-start-auto  ">
+                                <h3 className="mb-2 text-base font-medium sm:mb-4 lg:mb-6">
                                     Sign Up For Newsletter
                                 </h3>
                                 <div className="">
@@ -245,7 +245,7 @@ const Footer: NextComponentType = () => {
                             <Link href="/"> Windcommerce</Link>, Inc. All rights
                             reserved
                         </div>
-                        <div className="paymentsSupport | flex items-center gap-4 flex-wrap">
+                        <div className="paymentsSupport | flex flex-wrap items-center gap-4">
                             <Image
                                 src="/images/payments/mastercard.svg"
                                 width="30"
