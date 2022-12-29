@@ -6,46 +6,31 @@ import Newsletter from '@/components/common/Newsletter';
 
 const yearNow = new Date().getFullYear();
 
+type Service = {
+    id: number,
+    name: string
+}[]
+
+const services : Service= [
+    {
+        id: 1,
+        name: 'HTML, CSS, Theme Development',
+    },
+    {
+        id: 2,
+        name: 'Javascript',
+    },
+    {
+        id: 3,
+        name: 'ReactJS/Nextjs',
+    },
+    {
+        id: 4,
+        name: 'Magento 2 customises',
+    },
+];
+
 const Footer: NextComponentType = () => {
-    const services = [
-        {
-            id: 1,
-            name: 'HTML, CSS, Theme Development',
-        },
-        {
-            id: 2,
-            name: 'Javascript',
-        },
-        {
-            id: 3,
-            name: 'ReactJS/Nextjs',
-        },
-        {
-            id: 4,
-            name: 'Magento 2 customises',
-        },
-    ];
-
-    const [checked, setChecked] = useState([]);
-
-    console.log(checked);
-
-    const handleCheck = (id: number) => {
-        setChecked((prev): any => {
-            console.log(prev);
-            const isChecked = checked.includes(id);
-
-            if (isChecked) {
-                return checked.filter((item) => item !== id);
-            } else {
-                return [...prev, id];
-            }
-        });
-    };
-
-    const handleSubmit = () => {
-        console.log({ ids: checked });
-    };
 
     return (
         <>
@@ -60,40 +45,6 @@ const Footer: NextComponentType = () => {
                                     height="26"
                                     alt="logo"
                                 />
-
-                                <form>
-                                    {services.map((service) => (
-                                        <div
-                                            key={service.id}
-                                            className="flex items-center"
-                                        >
-                                            <input
-                                                type="checkbox"
-                                                id={service.id}
-                                                checked={checked.includes(
-                                                    service.id,
-                                                )}
-                                                onChange={() =>
-                                                    handleCheck(service.id)
-                                                }
-                                            />
-                                            <label
-                                                className="pl-2"
-                                                htmlFor={service.id}
-                                            >
-                                                {service.name}
-                                            </label>
-                                        </div>
-                                    ))}
-
-                                    <button
-                                        type="submit"
-                                        className="button primary mt-4 mr-auto flex items-end justify-end rounded-lg bg-primary p-2"
-                                        onClick={handleSubmit}
-                                    >
-                                        Register
-                                    </button>
-                                </form>
                             </div>
 
                             <div className="col-span-1 pb-3.5 sm:pb-0 md:col-span-2">
