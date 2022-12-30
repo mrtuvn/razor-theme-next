@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from 'react';
 import InlineSVG from 'svg-inline-react';
 import CategoriesTreeData from '@/data/categories/category-tree.json';

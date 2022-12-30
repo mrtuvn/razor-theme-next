@@ -1,3 +1,4 @@
+'use client';
 import type { NextComponentType } from 'next';
 import Image from 'next/image';
 import Cart from '@/components/common/Cart/Cart';
