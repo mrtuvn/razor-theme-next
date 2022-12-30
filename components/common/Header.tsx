@@ -1,18 +1,19 @@
-import type { NextComponentType } from "next";
-import Image from "next/image";
-import Cart from "@/components/common/Cart/Cart";
-import Search from "@/components/common/Search/Search";
-import MyAccount from "@/components/common/MyAccount/MyAccount";
-import Nav from "@/components/common/Nav/Nav";
-import Link from "next/link";
+import type { NextComponentType } from 'next';
+import Image from 'next/image';
+import Cart from '@/components/common/Cart/Cart';
+import Search from '@/components/common/Search/Search';
+import MyAccount from '@/components/common/MyAccount/MyAccount';
+import Nav from '@/components/common/Nav/Nav';
+import Link from 'next/link';
+import Logo from '@/components/common/Logo';
 
 const Header: NextComponentType = () => {
     return (
         <>
             <div className="header flex flex-col bg-footer text-white">
                 <div className="container mx-auto">
-                    <div className="top-header flex justify-between items-center py-2">
-                        <div className="disclaim text-sm ">
+                    <div className="top-header flex items-center justify-between py-2">
+                        <div className="disclaim text-sm">
                             Free International Shipping. No Minimum Purchase
                             Required *
                         </div>
@@ -25,14 +26,14 @@ const Header: NextComponentType = () => {
 
                             <div className="relative z-10 lg:top-[1px]">
                                 <button
-                                    className="text-skin-base relative w-full py-2 px-5 pe-5  text-start  focus:outline-none cursor-pointer"
+                                    className="text-skin-base pe-5 relative w-full cursor-pointer py-2  px-5  text-start focus:outline-none"
                                     id="headlessui-listbox-button-1"
                                     type="button"
                                     aria-haspopup="true"
                                     aria-expanded="false"
                                 >
-                                    <span className="text-gray-300 flex truncate items-center">
-                                        <span className="mr-2 w-4 h-4 rounded-full overflow-hidden flex-shrink-0">
+                                    <span className="flex items-center truncate text-gray-300">
+                                        <span className="mr-2 h-4 w-4 flex-shrink-0 overflow-hidden rounded-full">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 id="flag-icon-css-us"
@@ -65,17 +66,17 @@ const Header: NextComponentType = () => {
                                                 </g>
                                             </svg>
                                         </span>
-                                        <span className="leading-5 pb-0.5">
+                                        <span className="pb-0.5 leading-5">
                                             English
                                         </span>
                                     </span>
-                                    <span className="absolute inset-y-0  flex items-center pointer-events-none -right-2">
+                                    <span className="pointer-events-none absolute  inset-y-0 -right-2 flex items-center">
                                         <svg
                                             stroke="currentColor"
                                             fill="currentColor"
                                             strokeWidth="0"
                                             viewBox="0 0 16 16"
-                                            className="w-7 h-3.5 text-white opacity-40"
+                                            className="h-3.5 w-7 text-white opacity-40"
                                             aria-hidden="true"
                                             height="1em"
                                             width="1em"
@@ -92,16 +93,11 @@ const Header: NextComponentType = () => {
                         </div>
                     </div>
                     <div className="main-header flex items-center justify-between  py-2 md:py-4 ">
-                        <Image
-                            src="/windcom.svg"
-                            width="194"
-                            height="26"
-                            alt="logo"
-                        />
+                        <Logo />
 
                         <Search />
 
-                        <div className="right-actions flex gap-8 items-center">
+                        <div className="right-actions flex items-center gap-8">
                             <MyAccount />
                             <Cart />
                         </div>

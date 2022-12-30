@@ -1,4 +1,10 @@
-<svg class="windcommerce"
+import React from 'react';
+import InlineSVG from 'svg-inline-react';
+
+function Logo() {
+    return (
+        <InlineSVG
+            src={`<svg class="windcommerce"
     width="150"
     height="20"
     viewBox="0 0 150 20"
@@ -25,3 +31,9 @@
       Commerce
   </text>
 </svg>
+`}
+        />
+    );
+}
+
+export default Logo;
