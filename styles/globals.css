@@ -26,3 +26,13 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer components {
+  .category-dropdown-menu > li:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ececec;
+  }
+}

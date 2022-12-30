@@ -1,0 +1,77 @@
+[
+  {
+    "categoryId": 1,
+    "name": "Audio Music",
+    "image": "/assets/img/top-categories-img1.jpg"
+  },
+  {
+    "categoryId": 2,
+    "name": "Phones & Tablets",
+    "image": "/assets/img/top-categories-img2.jpg"
+  },
+  {
+    "categoryId": 3,
+    "name": "Fashion & Clothing",
+    "image": "/assets/img/top-categories-img3.jpg"
+  },
+  {
+    "categoryId": 4,
+    "name": "Garden & Kitchen",
+    "image": "/assets/img/top-categories-img4.jpg"
+  },
+  {
+    "categoryId": 5,
+    "name": "TV & Video",
+    "image": "/assets/img/top-categories-img5.jpg"
+  },
+  {
+    "categoryId": 6,
+    "name": "Beauty & Health",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 7,
+    "name": "Jewelry & Watches",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 8,
+    "name": "Top 10 Offers",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 9,
+    "name": "Accessories",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 10,
+    "name": "Beaf Steak",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 11,
+    "name": "Vitamin Items",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 12,
+    "name": "Raw Chicken Mdeo",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 13,
+    "name": "Breakfast Item",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 14,
+    "name": "Fish Items",
+    "image": "/assets/img/top-categories-img6.jpg"
+  },
+  {
+    "categoryId": 15,
+    "name": "Green Vegetables",
+    "image": "/assets/img/top-categories-img6.jpg"
+  }
+]
