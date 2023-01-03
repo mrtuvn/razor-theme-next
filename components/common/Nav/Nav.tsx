@@ -1,6 +1,5 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import InlineSVG from 'svg-inline-react';
 import CategoriesTreeData from '@/data/categories/category-tree.json';
 
 type Props = {};
@@ -47,10 +46,8 @@ function Nav({}: Props) {
                             onClick={handleClickCategoryTree}
                             className="hover:border-skin-four flex min-h-[60px] w-full cursor-pointer items-center rounded-t bg-primary px-[18px] py-4 font-medium uppercase text-white transition-all focus:outline-none"
                         >
-                            <InlineSVG
-                                className="mr-2"
-                                src={`<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-2xl me-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`}
-                            />
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-2xl me-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+
                             ALL CATEGORIES
                         </button>
                     </div>

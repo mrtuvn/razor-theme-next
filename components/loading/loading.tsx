@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import InlineSVG from "svg-inline-react";
 
 const svgSource = `<svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +113,7 @@ function Loading(loading: boolean) {
     return (
         loading && (
             <div className="absolute inset-0 grid items-center">
-                <InlineSVG src={svgSource} />
+                {svgSource}
             </div>
         )
     );
