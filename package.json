@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev-turbo": "next dev --turbo",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -18,7 +17,7 @@
   },
   "dependencies": {
     "daisyui": "^2.46.0",
-    "next": "13.0.2",
+    "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swiper": "^8.4.5",
