@@ -1,6 +1,5 @@
 'use client';
 import type { NextComponentType } from 'next';
-import Image from 'next/image';
 import Cart from '@/components/common/Cart/Cart';
 import Search from '@/components/common/Search/Search';
 import MyAccount from '@/components/common/MyAccount/MyAccount';

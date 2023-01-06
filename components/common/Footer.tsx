@@ -2,15 +2,12 @@
 import type { NextComponentType } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useId } from 'react';
 import Newsletter from '@/components/common/Newsletter';
 import Logo from '@/components/common/Logo';
 
 const yearNow = new Date().getFullYear();
 
 const Footer: NextComponentType = () => {
-    const [checked, setChecked] = useState([]);
-
     return (
         <>
             <footer className="bg-footer text-white">

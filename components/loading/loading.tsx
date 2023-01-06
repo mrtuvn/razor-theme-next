@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from 'react';
 
 const svgSource = `<svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,15 +107,9 @@ const svgSource = `<svg
                 </circle>
             </svg>`;
 
-function Loading(loading: boolean) {
-    const [loading, setLoading] = useState(false);
-
+function Loading() {
     return (
-        loading && (
-            <div className="absolute inset-0 grid items-center">
-                {svgSource}
-            </div>
-        )
+        <div className="absolute inset-0 grid items-center">{svgSource}</div>
     );
 }
 
