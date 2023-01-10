@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "clsx": "1.2.1",
-    "daisyui": "^2.46.0",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
