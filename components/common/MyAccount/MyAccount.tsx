@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
 type Props = {};
 
 function MyAccount({}: Props) {
     return (
-        <div className="myAccount flex gap-4 items-center">
-            <div className="rounded">
+        <div className="myAccount flex items-center gap-4">
+            <div className="flex h-[45px] w-[45px] shrink-0 items-center justify-center rounded-full border-[2px] border-solid border-gray">
                 <svg
                     width="16"
                     height="16"
                     viewBox="0 0 448 512"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="text-skin-primary"
+                    className="text-primary "
                 >
                     <path
                         fill="currentColor"

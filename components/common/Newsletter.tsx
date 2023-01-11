@@ -64,7 +64,7 @@ const Newsletter = (props: Props) => {
                         </svg>
                     </button>
                 </form>
-                <p className="text-sm">{`We don\'t spam your mailbox! Promised`}</p>
+                <p className="text-sm">{`We don\'t spam your mailbox. Promised !`}</p>
             </div>
         </>
     );

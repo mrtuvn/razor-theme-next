@@ -12,8 +12,8 @@ const Header: NextComponentType = () => {
         <>
             <div className="header flex flex-col bg-footer text-white">
                 <div className="container mx-auto">
-                    <div className="top-header flex items-center justify-between py-2">
-                        <div className="disclaim text-sm">
+                    <div className="top-header flex items-center justify-between py-2 text-[13px]">
+                        <div className="disclaim">
                             Free International Shipping. No Minimum Purchase
                             Required *
                         </div>

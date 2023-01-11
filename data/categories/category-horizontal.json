@@ -1,0 +1,50 @@
+[
+  {
+    "categoryId": 1,
+    "name": "Demos",
+    "url": "",
+    "image": "",
+    "child": []
+  },
+  {
+    "categoryId": 2,
+    "name": "Categories",
+    "url": "search",
+    "image": "",
+    "child": []
+  },
+  {
+    "categoryId": 3,
+    "name": "Mega Menu",
+    "image": "",
+    "child": []
+  },
+  {
+    "categoryId": 4,
+    "name": "Vendors",
+    "url": "shops",
+    "image": "",
+    "child": []
+  },
+  {
+    "categoryId": 5,
+    "name": "Pages",
+    "url": "",
+    "image": "",
+    "child": []
+  },
+  {
+    "categoryId": 6,
+    "name": "Blog",
+    "url": "",
+    "image": "",
+    "child": []
+  },
+  {
+    "categoryId": 7,
+    "name": "Contact Us",
+    "url": "",
+    "image": "",
+    "child": []
+  }
+]

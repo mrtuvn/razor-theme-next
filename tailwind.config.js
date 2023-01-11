@@ -25,6 +25,7 @@ module.exports = {
       colors: {
         primary: 'rgba(255,126,0)',
         fill: 'rgba(255,255,255)',
+        gray: 'rgba(255, 255, 255, 0.15)',
         second: '#fa8c16',
         tertiary: '#424',
         textBase: 'rgba(58,58,58)',
@@ -41,6 +42,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/line-clamp')
+    require('@tailwindcss/line-clamp'),
   ],
 };
