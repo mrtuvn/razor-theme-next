@@ -19,12 +19,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         const response = await fetch('https://dummyjson.com/users');
 
         const users: NextApiResponse = await response.json();
-        console.log(users);
-        setUsers(users as IUser[]);
+
+        return users;
     }
 
     useEffect(() => {
-        fetchUserDummy();
+        let data = fetchUserDummy();
+
+        if (data !== 'undefined') {
+            setUsers(data);
+        } else {
+            setUsers([]);
+        }
     }, []);
 
     return (
@@ -36,18 +42,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
                 <div className="flex h-full w-full flex-col items-center justify-center">
                     <div className="flex flex-wrap">
-                        {users.map((user) => {
-                            <div className="m-6 flex flex-col">
-                                <img
-                                    src={user.image}
-                                    className="w-40 rounded-full"
-                                    alt="image"
-                                />
-                                <span className="text-xl">
-                                    ({user.id}) {user.firstName} {user.lastName}
-                                </span>
-                            </div>;
-                        })}
+                        {
+                            users.length > 0 ?
+                                (users.map((user) => {
+                                <div className="m-6 flex flex-col">
+                                    <img
+                                        src={user.image}
+                                        className="w-40 rounded-full"
+                                        alt="image"
+                                    />
+                                    <span className="text-xl">
+                                        ({user.id}) {user.firstName} {user.lastName}
+                                    </span>
+                                </div>;
+                                })
+                            ) : <p className="w-auto p-4 m-9 bg-gray mx-auto text-red">Empty data</p>
+                        }
                     </div>
                 </div>
             </div>
